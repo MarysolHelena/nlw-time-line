@@ -4,7 +4,8 @@
   "description": "README do projeto.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsx watch src/server.ts",
+    "lint": "eslint src --ext .ts --fix"
   },
   "repository": {
     "type": "git",
@@ -18,7 +19,15 @@
   },
   "homepage": "https://github.com/MarysolHelena/nlw-timeline-server#readme",
   "devDependencies": {
+    "@rocketseat/eslint-config": "^2.1.0",
     "@types/node": "^20.8.6",
+    "eslint": "^8.51.0",
+    "prisma": "^5.4.2",
+    "tsx": "^3.13.0",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.4.2",
+    "fastify": "^4.24.2"
   }
 }
